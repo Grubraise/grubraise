@@ -1,0 +1,709 @@
+/* ==========================================================================
+   HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+img {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+   
+a
+{
+	color: #11678A;
+	text-decoration: none;
+}   
+   
+/* My body is ready */
+ 
+body
+{
+background: #9DE64B url(back_bg.png) repeat-x top;
+}
+
+section#wrap
+{
+background: url(container_bg.png) no-repeat center 1px;
+min-height: 1040px;
+}
+section#content
+{
+width: 1004px;
+margin: 0 auto;
+}
+
+header
+{
+min-height: 85px;
+}
+
+header a, a:visited {
+color: #11678A;
+text-decoration: none;
+}
+
+section#main
+{
+background: white;
+border-radius: 0px 6px 6px 6px;
+opacity: 0.9;
+min-height: 690px;
+margin:57px 0 0 40px;
+padding: 10px;
+box-shadow: 0px 4px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+footer
+{
+padding-top: 10px;
+padding-bottom: 10px;
+background: white;
+width: 45%;
+margin: 0 auto;
+opacity: 0.8;
+border-radius: 6px;
+margin-top: 30px;
+min-height: 76px;
+text-align: center;
+font: 100%/1.3 Georgia,"Times New Roman",Times,serif;
+font-size: 13px;
+clear: both;
+}
+
+/* Error Message */
+
+section.hold
+	{
+	position: absolute;
+	}
+
+	#error_messages
+	{
+	position: absolute;
+	left: 125px;
+	width: 250px;
+	font: 100%/1.3 Georgia,"Times New Roman",Times,serif;
+	font-size: 13px;
+	
+	}
+
+	.error
+	{
+	color: red;
+	}
+
+    div.raisecontainer {
+	background-color: #F9EBEB;
+	border: 1px solid #B30000;
+	padding: 10px 20px;
+	width:200px;
+	margin:10px;
+	}
+	div.raisecontainer ul li {
+		list-style-type: disc;
+		margin-left: 20px;
+	}
+	div.raisecontainer { display: none }
+	.raisecontainer label.error {
+		display: inline;
+	}
+	
+	div.Logcontainer {
+	background-color: #F9EBEB;
+	border: 1px solid #B30000;
+	margin: 5px;
+	padding: 10px 10px;
+	}
+	div.Logcontainer ul {
+	margin: 0;
+	}
+	div.Logcontainer ul li {
+		list-style-type: disc;
+		margin: 0;
+	}
+	div.Logcontainer { display: none }
+	.Logcontainer label.error {
+		display: inline;
+	}
+	
+	    div.restaurant_form_error {
+	background-color: #F9EBEB;
+	border: 1px solid #B30000;
+	padding: 10px 20px;
+	width:650px;
+	margin:10px 10px 10px 50px;
+	}
+	div.restaurant_form_error ul li {
+		list-style-type: disc;
+		margin-left: 20px;
+	}
+	div.restaurant_form_error { display: none }
+	.restaurant_form_error label.error {
+		display: inline;
+	}
+
+	
+/* Top Login Form */	
+.login-form {
+float: right;
+padding: 20px 8px 12px 0;
+margin-bottom: 10px;
+}
+
+.login-form li
+{
+list-style: none;
+}
+
+.login-form .right {
+float: right;
+}
+
+.login-form label {
+float: left;
+font-family: Georgia, Arial, sans-serif;
+padding-right: 6px;
+color: #11678A;
+}
+
+.login-form label.error {
+color: red;
+}
+
+.login-form input {
+display: block;
+}
+
+.login-form input.btn {
+width: 64px;
+height: 29px;
+margin-top: 20px;
+border: 3px solid #EBEBEB;
+background:#11678A;
+color: white;
+font-family: Georgia, serif;
+font-weight: bold;
+font-size: 14px;
+padding: 2px 4px 4px 4px;
+text-align: center;
+border-radius: 6px;
+display: inline;
+float: left;
+}
+
+.login-form input.btn:hover {
+background: #73834D;
+}
+
+/* Tabs */
+	nav {
+	float: left;
+	margin-top: 85px;
+	height: 41px;
+	}
+	
+	nav li {
+	font:0.8em Georgia, serif;
+	width: 125px;
+	height: 29px;
+	text-align: center;
+	padding-top: 11px;
+	float: left;
+	margin-right: 4px;
+	color: #FEFEFE;
+	background: #11678A;
+	border-radius: 10px 10px 0px 0px;
+	border-top: 1px solid #73D4F5;
+	border-left: 2px solid #73D4F5;
+	border-right: 2px solid #73D4F5;
+	list-style: none;
+	}
+	
+	nav li.selected {
+	background: white;
+	color: #3A3A39;
+	border-radius: 10px 10px 0px 0px;
+	border-top: 1px solid #73D4F5;
+	border-left: 1px solid #73D4F5;
+	border-right: 1px solid #73D4F5;
+	}
+	
+	
+
+/*Forgot Password Box */
+.overlay {
+height: 100%;
+left: 0;
+position: fixed;
+top: 0;
+width: 100%;
+z-index: 10000;
+background: #555;
+opacity: 0.5;
+}
+
+#lightbox {
+position: fixed;
+top: 35%;
+left: 50%;
+width: 632px;
+background: white;
+z-index: 10005;
+text-align: center;
+margin: -150px 0 0 -315px;
+padding: 25px 0;
+}
+
+
+#lightbox.forgotten-password-dialog {
+font-size: 1.2em;
+font-style: normal;
+}
+
+#lightbox {
+position: fixed;
+top: 35%;
+left: 50%;
+width: 632px;
+background: white;
+z-index: 10005;
+text-align: center;
+margin: -150px 0 0 -315px;
+padding: 25px 0;
+}
+
+#lightbox p {
+font-style: italic;
+font-size: 1.1em;
+padding: 0 0 20px;
+font-family: Georgia, serif;
+}
+
+
+
+#lightbox .remove, #lightbox .remove span, .holder .remove, .holder .remove span {
+width: 13px;
+height: 24px;
+display: block;
+overflow: hidden;
+position: absolute;
+right: 15px;
+}
+
+#lightbox .remove, #lightbox .remove span {
+top: 10px;
+cursor: pointer;
+}
+
+/* Main */
+	section#main img
+	{
+	float: left;
+	}
+	section#main h1 {
+	position: absolute;
+	color: #73834D;
+	font: 2.2em Arial, sans-serif;
+	line-height: 2em;
+	font-weight: bold;
+	text-align: center;
+	margin-left: 14px;
+	}
+	section#main aside
+	{
+	width: 260px;
+	background: #F0F7F7;
+	border: 1px solid #CDCEB3;
+	min-height: 592px;
+	font-family: Georgia, Arial, sans-serif;
+	box-shadow: -3px 3px 6px 1px rgba(0, 0, 0, 0.3);
+	color: #3A3A39;
+	float: left;
+	margin: 20px 0 0 20px;
+	}
+	section#main aside h3
+	{
+	font-size: 19px;
+	font-family: Georgia, Arial, sans-serif;
+	padding: 10px 0 0 20px;
+	margin-bottom: 5px;
+	}
+	#subheader
+	{
+	margin-left: 20px;
+	color: #525151;
+	line-height: 13px;
+	}
+	section#main aside fieldset {
+	margin: 30px 0 0 10px;
+	}
+	section#main aside form .field {
+	margin-bottom: 10px;
+	}
+	section#main aside form .field input {
+	float: left;
+	padding: 3px;
+	width: 130px;
+	font-family: Georgia, Arial, sans-serif;
+	margin-bottom: 15px;
+	}
+	section#main aside form .field label {
+	float: left;
+	width: 82px;
+	font-size: 0.8em;
+	text-align: right;
+	color: #3A3A39;
+	margin: 5px 10px 0 0;
+	}
+	section#main aside input.submit
+	{
+	width: 146px;
+	height: 40px;
+	margin-top: 10px;
+	margin-left: 90px;
+	border: 3px solid #EBEBEB;
+	background: #11678A;
+	color: white;
+	font-family: Georgia, serif;
+	font-weight: bold;
+	font-size: 14px;
+	padding: 2px 4px 4px 4px;
+	text-align: center;
+	border-radius: 6px;
+	display: inline;
+	float: left;
+	}	
+	section#main aside input.submit:hover
+	{
+	background: #73834D;
+	}
+	section#main aside p.terms {
+	color: #686868;
+	font-size: .7em;
+	font-family: Georgia, sans-serif;
+	margin: 12px 20px 5px 20px;
+	}
+	section#main aside p.terms a{
+	text-decoration: none;
+	color: #686868;
+	}
+	#questions_answers, #terms {
+	padding: 20px 90px;
+	font-family: Georgia, sans-serif;
+	}
+	#questions_answers h2 {
+	color: #11678A;
+	font-family: Georgia, serif;
+	font-weight: normal;
+	font-size: 25px;
+	padding: 20px 0 10px;
+	}
+	#questions_answers #links li a {
+	font-family: Georgia, serif;
+	font-size: 16px;
+	display: block;
+	padding: 6px 0 2px 0;
+	text-decoration: none;
+	}
+	#questions_answers #links li a, a:visited {
+	color: #11678A;
+	text-decoration: none;
+	}
+	#questions_answers #links li a:hover {
+	color: #73D4F5;
+	}
+	#questions_answers h3 {
+	color: #11678A;
+	font-size: 20px;
+	padding: 30px 0 10px 0;
+	}
+	#terms h3
+	{
+	color: #11678A;
+	font-family: Georgia, serif;
+	font-weight: normal;
+	font-size: 25px;
+	padding: 20px 0 10px;
+	}
+	#questions_answers p, #terms p {
+	font-size: 16px;
+	margin-bottom: 10px;
+	padding-right: 20px;
+	}
+	#restaurant_form {
+	padding: 20px 80px;
+	
+	}
+	#restaurant_form h2 {
+	font-size: 1.9em;
+	font-style: italic;
+	margin: 30px 0 20px 10px;
+	font-weight: normal;
+	font-family: Georgia, serif;
+	color: #11678A;
+	}
+	#restaurant_form p {
+	margin: 10px 45px 0px 40px;
+	font-size: 1em;
+	font-family: Georgia, serif;
+	letter-spacing: 0;
+	line-height: 24px;
+	color: #412612;
+	}
+	#restaurant_form form label {
+	float: left;
+	text-align: right;
+	margin-right: 15px;
+	width: 200px;
+	padding-top: 5px;
+	font-size: 1.2em;
+	font-family: Georgia, serif;
+	color: #412612;;
+	}
+	#restaurant_form form input, #restaurant_form form textarea {
+	padding: 5px;
+	margin: 4px 0px 10px 0px;
+	border: 2px solid #CCC;
+	float: left;
+	width: 500px;
+	max-width: 500px;
+	font-size: 1em;
+	font-family: Georgia, Times, "Times New Roman", serif;
+	}
+	#restaurant_form form input[type="checkbox"] {
+	margin: 4px 0px 10px 200px;
+	float: left;
+	width: 50px;
+	}
+	#restaurant_form form label.optional_check {
+	float: left;
+	margin-right: 15px;
+	width: 320px;
+	font-size: 1.1em;
+	text-align: left;
+	padding-top: 0;
+	}
+	#restaurant_form form input[type="submit"] {
+	margin: 10px 0px 10px 215px;
+	float: left;
+	width: 150px;
+	height: 34px;
+	border: 3px solid #EBEBEB;
+	background: #11678A;
+	color: white;
+	font-family: Georgia, serif;
+	font-weight: bold;
+	font-size: 14px;
+	padding: 2px 4px 4px 4px;
+	text-align: center;
+	border-radius: 6px;
+	display: inline;
+	}
+	#restaurant_form form input[type="submit"]:hover {
+	background: #73834D;
+	}
+/* Footer */
+
+footer p, footer a {
+color: #4D4D4D;
+}
+	
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+       only screen and (min-resolution: 144dpi) {
+
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 100%;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow:none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

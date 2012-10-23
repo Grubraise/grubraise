@@ -1,0 +1,2 @@
+module PtaHelper
+end

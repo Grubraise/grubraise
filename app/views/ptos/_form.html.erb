@@ -1,0 +1,32 @@
+<%= form_for(@pto) do |f| %>
+
+<% if @pto.errors.any? %>
+<br>
+    <div id="error_explanation">
+      <% @pto.errors.full_messages.each do |msg| %>
+        <li> <center><label class="error"><%= msg %> </label></center></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+<fieldset>
+ <div class="field">
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+  <div class="clearfix"></div>
+  <div class="field">
+    <%= f.label :email %>
+    <%= f.email_field :email %>
+  <div class="clearfix"></div>
+  <div class="field">
+    <%= f.label :school, "School Name" %>
+    <%= f.text_field :school %>
+  </div>
+  <div class="clearfix"></div> 
+  <div class="submit">
+    <%= f.submit "Start Raising", :class => 'submit btn'  %>
+  </div>
+ </fieldset>
+<% end %>

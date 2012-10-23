@@ -1,0 +1,27 @@
+
+<%= form_for(@pto) do |f| %>
+<fieldset>
+ 
+<div ction="#" id="valid_form" method="post">
+ <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.email_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label :school %><br />
+    <%= f.text_field :school %>
+  </div>
+  <div class="field">
+    <%= f.label :phone, 'Phone Number' %><br />
+    <%= f.telephone_field :phone %>
+  </div>
+  <div class="submit btn">
+    <%= f.submit "Submit" %>
+  </div>
+  </di
+<% end %>
+

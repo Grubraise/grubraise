@@ -1,0 +1,45 @@
+<%= form_for(@restuarant) do |f| %>
+  <% if @restuarant.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@restuarant.errors.count, "error") %> prohibited this restuarant from being saved:</h2>
+
+      <ul>
+      <% @restuarant.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :restuarant_name, "Restaurant"%>
+    <%= f.text_field :restuarant_name, :size => 30 %>
+  </div>
+  <div class="field">
+    <%= f.label :owner_name, "Owner"%>
+    <%= f.text_field :owner_name, :size => 30 %>
+  </div>
+  <div class="field">
+    <%= f.label :phone_number, "Phone Number"%>
+    <%= f.telephone_field :phone_number, :size => 30 %>
+  </div>
+  <div class="field">
+    <%= f.label :email, "Email"%>
+    <%= f.email_field :email, :size => 30 %>
+  </div>
+  <div class="field">
+    <%= f.label :website, "Website"%>
+    <%= f.text_field :website, :size => 30 %>
+  </div>
+  <div class="field">
+    <%= f.label :reference, "Reference"%>
+    <%= f.text_field :reference, :size =>30 %>
+  </div>
+  <div class="field">
+    <%= f.label :message, "Message"%>
+    <%= f.text_area :message, :rows => 6 %>
+  </div>
+  <div class="actions">
+    <%= f.submit "Submit"%>
+  </div>
+<% end %>

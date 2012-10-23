@@ -1,0 +1,30 @@
+<section id="main">
+  <div id="restaurant_form">
+  	
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @pto.name %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @pto.email %>
+</p>
+
+<p>
+  <b>School:</b>
+  <%= @pto.school %>
+</p>
+
+<p>
+  <b>Phone:</b>
+  <%= @pto.phone %>
+</p>
+
+
+<%= link_to 'Edit', edit_pto_path(@pto) %> |
+<%= link_to 'Back', ptos_path %>
+</div>
+</section>

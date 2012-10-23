@@ -1,0 +1,40 @@
+<section id="main">
+  <div id="restaurant_form">
+
+<h2>Listing restuarants</h2>
+
+<table>
+  <tr>
+    <th>Restuarant</th>
+    <th>Owner</th>
+    <!-- <th>Website</th>
+    <th>Email</th>
+    <th>Reference</th>
+    <th>Phone number</th>
+    <th>Message</th> -->
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @restuarants.each do |restuarant| %>
+  <tr>
+    <td><%= restuarant.restuarant_name %></td>
+    <td><%= restuarant.owner_name %></td>
+   <!-- <td><%= restuarant.website %></td>
+    <td><%= restuarant.email %></td>
+    <td><%= restuarant.reference %></td>
+    <td><%= restuarant.phone_number %></td>
+    <td><%= restuarant.message %></td> -->
+    <td><%= link_to 'Show', restuarant %></td>
+    <td><%= link_to 'Edit', edit_restuarant_path(restuarant) %></td>
+    <td><%= link_to 'Delete', restuarant, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'Back', :root %>
+</div>
+</section>

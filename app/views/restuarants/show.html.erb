@@ -1,0 +1,46 @@
+<section id="main">
+  <div id="restaurant_form">
+
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Restuarant name:</b>
+  <%= @restuarant.restuarant_name %>
+</p>
+
+<p>
+  <b>Owner name:</b>
+  <%= @restuarant.owner_name %>
+</p>
+
+<p>
+  <b>Website:</b>
+  <%= @restuarant.website %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @restuarant.email %>
+</p>
+
+<p>
+  <b>Reference:</b>
+  <%= @restuarant.reference %>
+</p>
+
+<p>
+  <b>Phone number:</b>
+  <%= @restuarant.phone_number %>
+</p>
+
+<p>
+  <b>Message:</b>
+  <%= @restuarant.message %>
+</p>
+
+
+<%= link_to 'Edit', edit_restuarant_path(@restuarant) %> |
+<%= link_to 'Back', restuarants_path %>
+
+</div>
+</section>

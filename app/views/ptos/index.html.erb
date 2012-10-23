@@ -1,0 +1,35 @@
+<section id="main">
+  <div id="restaurant_form">
+
+<h2>Listing ptos</h2>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Email</th>
+    <th>School</th>
+    <th>Phone</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @ptos.each do |pto| %>
+  <tr>
+    <td><%= pto.name %></td>
+    <td><%= pto.email %></td>
+    <td><%= pto.school %></td>
+    <td><%= pto.phone %></td>
+    <td><%= link_to 'Show', pto %></td>
+    <td><%= link_to 'Edit', edit_pto_path(pto) %></td>
+    <td><%= link_to 'Destroy', pto, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'Back', :root %>
+
+</div>
+</section>
