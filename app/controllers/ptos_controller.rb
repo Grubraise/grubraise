@@ -2,6 +2,7 @@ class PtosController < ApplicationController
   # GET /ptos
   # GET /ptos.json
     before_filter :authorize, only: [:index, :edit, :update, :show, :destroy]
+  
 
   def index
     @ptos = Pto.all

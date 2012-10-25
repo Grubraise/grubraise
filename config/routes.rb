@@ -1,9 +1,5 @@
 Grubraise::Application.routes.draw do
 
-  resources :ptos
-
-  resources :pta
-
 get "sessions/new"
 
 get 'signup', to: 'users#new', as: 'signup'
@@ -15,6 +11,8 @@ get 'restuarant', to: 'restuarants#new', as: 'restuarant'
 get 'restaurants', to: 'restuarants#index', as: 'restaurants'
 get 'index', to: 'ptos#new', as: 'index'
 get 'resthanks', to: 'resthanks#new', as: 'resthanks'
+get '/ptos/create', to: 'ptos#create', as: 'create'
+get 'privacy', to: 'Privacy.html', as: 'privacy' 
 
 root to: 'ptos#new'
 resources :users

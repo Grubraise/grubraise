@@ -1,9 +1,27 @@
+<nav>
+<ol>
+<a href="index.html"><li class="">Raise Money</li></a>
+<a href="help.html"><li class="">How Does it Work?</li></a>
+<a href="restuarant.html"><li class="">Restaurants</li></a>
+</ol>
+</nav>
+</header>
 <section id="main">
   <div id="restaurant_form">
 
+    <%= form_for @user do |f| %>
+  <% if @user.errors.any? %>
+    <div class="error_messages">
+      <h2>Form is invalid</h2>
+      <ul>
+        <% @user.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
 <h2>Sign Up</h2>
-
-
 
   <div class="field">
     <%= f.label :email %><br />

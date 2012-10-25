@@ -1,32 +1,27 @@
-<%= form_for(@pto) do |f| %>
-
-<% if @pto.errors.any? %>
-<br>
-    <div id="error_explanation">
-      <% @pto.errors.full_messages.each do |msg| %>
-        <li> <center><label class="error"><%= msg %> </label></center></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
-
-<fieldset>
- <div class="field">
-    <%= f.label :name %>
-    <%= f.text_field :name %>
-  </div>
-  <div class="clearfix"></div>
-  <div class="field">
-    <%= f.label :email %>
-    <%= f.email_field :email %>
-  <div class="clearfix"></div>
-  <div class="field">
-    <%= f.label :school, "School Name" %>
-    <%= f.text_field :school %>
-  </div>
-  <div class="clearfix"></div> 
-  <div class="submit">
-    <%= f.submit "Start Raising", :class => 'submit btn'  %>
-  </div>
- </fieldset>
-<% end %>
+<div class="raisecontainer">
+              <ol>
+              <li><label for="pto_name" class="error">Name cannot be blank</label></li>
+              <li><label for="pto_email" class="error">Email is not a valid email address.</label></li>
+              <li><label for="pto_school" class="error">School Name cannot be blank.</label></li>
+              </ol>
+              </div>
+              <form action="/ptos" class="new_pto" id="valid_form" method="post">
+              <fieldset>
+              <div class="field">
+              <label for="pto_name">Name</label>
+              <input id="pto_name" name="pto[name]" class="{validate:{required:true}}" size="30" value="" type="text" />
+              </div>
+              <div class="clearfix"></div>
+              <div class="field">
+              <label for="pto_email">Email</label>
+              <input id="pto_email"  name="pto[email]" class="{validate:{required:true,email:true}}" value="" size="30" type="text" />
+              </div>
+              <div class="clearfix"></div>
+              <div class="field">
+              <label for="pto_school">School Name</label>
+              <input id="pto_school" name="pto[school]" class="{validate:{required:true}}" value="" size="30" type="text" />
+              </div>
+              <div class="clearfix"></div>
+              <input type="submit" value="Start Raising" class="submit btn"/>               
+              </fieldset>
+              </form> 
