@@ -43,8 +43,10 @@
 							<% if current_user %>
     							Logged in as <%= current_user.email %>.
     							<%= link_to "Log out", logout_path %>
+    							<a href="restaurants.html"> Restaurants</a>
+    							<a href="ptas.html"> PTAs</a>
   							<% else %>
-							<form action="#" id="logform" method="post" novalidate="novalidate">
+							<form action="" id="logform" method="post" novalidate="novalidate">
 							<fieldset class="right">
 							<label for="email">Email   
 							<input id="email" name="email" class="{validate:{required:true,email:true}}" type="text" value="">
