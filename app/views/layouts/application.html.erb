@@ -40,6 +40,10 @@
 							</section>
 		<!-- / Top Login Form -->
 							<div class="login-form">
+							<% if current_user %>
+    							Logged in as <%= current_user.email %>.
+    							<%= link_to "Log out", logout_path %>
+  							<% else %>
 							<form action="#" id="logform" method="post" novalidate="novalidate">
 							<fieldset class="right">
 							<label for="email">Email   
@@ -52,6 +56,7 @@
 							<input type="submit" value="Login" class="btn" />
 							</fieldset>
 							</form>
+							<%end%>
 							</div>
 		
 		<!-- / Forgot Password Box -->
